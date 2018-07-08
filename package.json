@@ -1,12 +1,13 @@
 {
   "name": "e2e",
   "version": "1.0.0",
-  "description": "End to End testing framework usign Protractor Cucumber Typescript Jasmine",
+  "description": "End to End testing framework usign Protractor Cucumber Typescript",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist, reports",
     "test": "protractor dist/config/config.js",
+    "test-functional": "npm run clean && npm run build && npm run test",
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start",
     "cucumber": "cucumber-js ./features -r ./dist/stepdefinitions"

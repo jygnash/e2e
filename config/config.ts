@@ -12,6 +12,7 @@ export const config: Config = {
     baseUrl: "http://localhost:9000/",
 
     capabilities: {
+        //browserName: "firefox",
         browserName: "chrome",
     },
 
